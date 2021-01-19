@@ -1,0 +1,5 @@
+1. 尋找檔案名稱符合的檔案
+find . -name '*.cc'
+
+2. 在檔案中尋找字串
+find . -name '*.cc' | xargs grep NS_LOG_COMPONENT_DEFINE
