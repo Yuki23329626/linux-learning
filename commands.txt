@@ -3,3 +3,6 @@ find . -name '*.cc'
 
 2. 在檔案中尋找字串
 find . -name '*.cc' | xargs grep NS_LOG_COMPONENT_DEFINE
+
+3. 二次尋找字串，並忽略大小寫
+find . -name '*.cc' | xargs grep NS_LOG_COMPONENT_DEFINE | grep -i udpclient
